@@ -1,0 +1,21 @@
+# Node Modules
+node_modules/
+
+# Environment Variables
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Netlify
+.netlify/
