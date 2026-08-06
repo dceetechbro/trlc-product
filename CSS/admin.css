@@ -1,0 +1,365 @@
+/* LOGIN SCREEN */
+
+.admin-login{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--color-dark);
+
+    padding:2rem;
+
+}
+
+.login-card{
+
+    width:min(100%,450px);
+
+    background:var(--color-dark-card);
+
+    border-radius:24px;
+
+    padding:3rem;
+
+    box-shadow:var(--shadow-lg);
+
+    text-align:center;
+
+}
+
+.login-card img{
+
+    width:90px;
+
+    margin:0 auto 1.5rem;
+
+}
+
+.login-card h4{
+
+    color:var(--color-text);
+
+    margin-bottom:.5rem;
+
+}
+
+.login-card p{
+
+    color:var(--color-text-light);
+
+    margin-bottom:2rem;
+
+}
+
+.login-card .form-group{
+
+    text-align:left;
+
+    margin-bottom:1.5rem;
+
+}
+
+.login-card input{
+
+    width:100%;
+
+    padding:1rem;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    background:#0A162E;
+
+    color:#fff;
+
+}
+
+.login-card input::placeholder{
+
+    color:#94A3B8;
+
+}
+
+#loginError{
+
+    margin-top:1rem;
+
+    color:#ff6b6b;
+
+}
+
+
+/* DASHBOARD */
+
+.admin-panel{
+
+    padding:5rem 0;
+
+    background:var(--color-dark);
+
+    min-height:100vh;
+
+}
+
+.admin-panel .container{
+
+    max-width:700px;
+
+    background:var(--color-dark-card);
+
+    border-radius:24px;
+
+    padding:3rem;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.admin-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:2rem;
+
+    gap:1rem;
+
+}
+
+
+.admin-panel .form-group{
+
+    margin-bottom:1.5rem;
+
+}
+
+.admin-panel label{
+
+    display:block;
+
+    margin-bottom:.6rem;
+
+    color:var(--color-text);
+
+}
+
+.admin-panel input,
+
+.admin-panel textarea{
+
+    width:100%;
+
+    padding:1rem;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    background:#0A162E;
+
+    color:#fff;
+
+}
+
+.admin-panel textarea{
+
+    resize:vertical;
+
+}
+
+#status{
+
+    margin-top:1rem;
+
+    color:#16a34a;
+
+    font-weight:700;
+
+}
+
+.btn{
+
+    display:block;
+
+    margin:0 auto;
+
+    padding:1rem 2rem;
+
+    border-radius:14px;
+
+    background:var(--color-primary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.3s ease-in-out;
+
+}
+
+/* ==========================================
+   DONATION ADMIN
+========================================== */
+
+.admin-divider{
+
+    margin:4rem 0;
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.donation-admin{
+
+    margin-top:2rem;
+
+}
+
+.donation-admin h2{
+
+    margin-bottom:.5rem;
+
+}
+
+.admin-subtitle{
+
+    color:var(--color-text-light);
+
+    margin-bottom:2rem;
+
+}
+
+.donation-list{
+
+    display:grid;
+
+    gap:1.5rem;
+
+}
+
+.donation-item{
+
+    background:var(--color-dark-card);
+
+    border-radius:18px;
+
+    padding:1.5rem;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.donation-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:1rem;
+
+}
+
+.donation-name{
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+}
+
+.donation-status{
+
+    background:#D78B01;
+
+    color:white;
+
+    padding:.35rem .8rem;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+}
+
+.donation-details{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:.8rem;
+
+    margin-bottom:1.5rem;
+
+}
+
+.donation-details p{
+
+    margin:0;
+
+}
+
+.donation-actions{
+
+    display:flex;
+
+    gap:1rem;
+
+}
+
+.verify-btn{
+
+    background:#16a34a;
+
+    color:white;
+
+}
+
+.reject-btn{
+
+    background:#dc2626;
+
+    color:white;
+
+}
+
+.verify-btn,
+.reject-btn{
+
+    padding:.8rem 1.5rem;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.admin-panel .container,
+
+.login-card{
+
+padding:2rem;
+
+}
+
+}

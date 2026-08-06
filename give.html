@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Partner With TRLC 2026 | The Resurrected Church</title>
+    <link rel="icon" type="image/png" href="images/TRC Official.png" />
+
+    <meta
+      name="description"
+      content="Partner with The Resurrected Church to make TRLC 2026 possible. Every gift helps build an atmosphere for lives to encounter Jesus Christ."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/components.css" />
+
+    <link rel="stylesheet" href="css/give.css" />
+
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body class="give-page">
+    <!-- HEADER -->
+
+    <header class="header header-give" id="header">
+      <div class="container nav-container">
+        <!-- Logo -->
+
+        <a href="index.html" class="logo" aria-label="TRLC Home">
+          <img
+            src="images/TRLC main.png"
+            alt="The Resurrected Life Conference Logo"
+          />
+
+          <div class="logo-content"></div>
+        </a>
+
+        <!-- Navigation -->
+
+        <nav class="navbar" id="navbar">
+          <ul class="nav-list">
+            <li><a href="index.html#about">About</a></li>
+
+            <li><a href="index.html#edition-2026">2026 Edition</a></li>
+
+            <li><a href="index.html#impact">Impact</a></li>
+
+            <li><a href="#budget">Budget</a></li>
+
+            <li>
+              <a href="index.html" class="btn btn-secondary"> Back Home </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle Navigation"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="give-hero">
+      <div class="container">
+        <span class="section-tag"> Partner With TRLC 2026 </span>
+
+        <h1>Thank you for considering this.</h1>
+
+        <p>
+          Every gift here does two things at once: it carries TRLC 2026, and it
+          builds infrastructure The Resurrected Church will use for every
+          service after the conference. Whether you're giving once or partnering
+          monthly, you're investing in lives that will be raised, restored and
+          empowered. We don't take that lightly, and we'll keep this page honest
+          about where every naira goes.
+        </p>
+      </div>
+    </section>
+
+    <!-- LIVE CAMPAIGN -->
+
+    <section class="campaign-dashboard">
+      <div class="container">
+        <div class="campaign-grid">
+          <div class="campaign-card">
+            <h3>₦<span id="amountRaised"> 0 </span></h3>
+
+            <p>Raised so far</p>
+          </div>
+
+          <div class="campaign-card">
+            <h3>₦<span id="projectBudget"> 49,238,200 </span></h3>
+
+            <p>Project Budget</p>
+          </div>
+
+          <div class="campaign-card">
+            <h3><span id="campaignPercentage"> 0.0 </span>%</h3>
+
+            <p>Funded</p>
+          </div>
+
+          <div class="campaign-card">
+            <h3>₦<span id="remainingBudget"> 49,238,200 </span></h3>
+
+            <p>Remaining</p>
+          </div>
+        </div>
+
+        <div class="campaign-progress">
+          <div class="campaign-progress-bar" id="campaignProgress"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="live-feed">
+
+    <div class="container">
+
+        <div class="section-header text-center">
+
+            <span class="section-tag">
+
+                Recent Partners
+
+            </span>
+
+        </div>
+
+        <div id="liveFeed"></div>
+
+    </div>
+
+</section>
+
+    <!-- BUDGET BREAKDOWN -->
+
+    <section id="budget" class="budget-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"> Budget Breakdown </span>
+
+          <h2>Where Every Gift Goes</h2>
+        </div>
+
+        <div class="budget-grid">
+          <article class="budget-card">
+            <i class="fa-solid fa-tv"></i>
+
+            <h3>Stage LED Screen</h3>
+
+            <h4 id="ledScreen">₦14,440,000</h4>
+
+            <p>Large LED display for stage visuals and worship experience.</p>
+          </article>
+
+          <article class="budget-card">
+            <i class="fa-solid fa-video"></i>
+
+            <h3>Media Equipment</h3>
+
+            <h4 id="mediaEquipment">₦13,515,000</h4>
+
+            <p>Professional cameras, production and recording systems.</p>
+          </article>
+
+          <article class="budget-card">
+            <i class="fa-solid fa-volume-high"></i>
+
+            <h3>Sound Equipment</h3>
+
+            <h4 id="soundEquipment">₦8,612,000</h4>
+
+            <p>Crystal-clear sound systems for every session.</p>
+          </article>
+
+          <article class="budget-card">
+            <i class="fa-solid fa-star"></i>
+
+            <h3>Decor</h3>
+
+            <h4 id="decor">₦4,863,200</h4>
+
+            <p>Conference ambience, stage finishing and branding.</p>
+          </article>
+
+          <article class="budget-card">
+            <i class="fa-solid fa-lightbulb"></i>
+
+            <h3>Lighting Gadgets</h3>
+
+            <h4 id="lightingGadgets">₦4,410,000</h4>
+
+            <p>Professional lighting for worship and media production.</p>
+          </article>
+
+          <article class="budget-card">
+            <i class="fa-solid fa-utensils"></i>
+
+            <h3>Welfare & Hospitality</h3>
+
+            <h4 id="welfareHospitality">₦1,500,000</h4>
+
+            <p>Volunteer care, hospitality and guest welfare.</p>
+          </article>
+
+          <article class="budget-card">
+            <i class="fa-solid fa-building"></i>
+
+            <h3>Venue, Rally & Others</h3>
+
+            <h4 id="venueRallyOthers">₦840,000</h4>
+
+            <p>Venue logistics and conference operations.</p>
+          </article>
+
+          <article class="budget-card">
+            <i class="fa-solid fa-gas-pump"></i>
+
+            <h3>Diesel and Chairs</h3>
+
+            <h4 id="dieselChairs">₦750,000</h4>
+
+            <p>Power supply and seating arrangements.</p>
+          </article>
+
+          <article class="budget-card">
+            <i class="fa-solid fa-child"></i>
+
+            <h3>Children's Ministry</h3>
+
+            <h4 id="childrenMinistry">₦308,000</h4>
+
+            <p>A safe and engaging experience for children attending TRLC.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISION VIDEO -->
+
+    <section class="vision-video" id="visionVideo">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"> Our Vision </span>
+        </div>
+
+        <div class="vision-video-card">
+          <video controls preload="metadata" autoplay muted loop playsinline>
+            <source src="videos/visionVideo.mp4" type="video/mp4" />
+
+            Your browser doesn't support HTML5 video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPONSOR THE VISION -->
+
+    <section id="give-now" class="donation-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"> Give Now </span>
+
+          <h2>Sponsor the Vision</h2>
+
+          <p>
+            Choose an amount below, or enter your own. Every gift helps bring
+            TRLC 2026 to life.
+          </p>
+        </div>
+
+        <!-- Donation Amounts -->
+
+        <div class="amount-grid">
+          <button class="amount-card" data-amount="10000">₦10,000</button>
+
+          <button class="amount-card" data-amount="50000">₦50,000</button>
+
+          <button class="amount-card" data-amount="100000">₦100,000</button>
+
+          <button class="amount-card" data-amount="250000">₦250,000</button>
+
+          <button class="amount-card" data-amount="500000">₦500,000</button>
+
+          <button class="amount-card" id="otherAmountButton">Others</button>
+        </div>
+
+        <!-- Custom Amount -->
+
+        <div class="custom-amount">
+          <label for="customAmount"> Custom Amount </label>
+
+          <div class="amount-input">
+            <span> ₦ </span>
+
+            <input
+              type="number"
+              id="customAmount"
+              placeholder="Enter amount"
+              min="100"
+            />
+          </div>
+        </div>
+
+        <!-- Frequency -->
+
+        <div class="frequency-group">
+          <button class="frequency-btn active" data-frequency="once">
+            Give Once
+          </button>
+
+          <button class="frequency-btn" data-frequency="monthly">
+            Give Monthly
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNER INFORMATION -->
+
+    <section class="partner-information">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"> Partner Information </span>
+
+          <h2>Tell us a little about you</h2>
+
+          <p>
+            Your information helps us send your giving receipt and stay
+            accountable to every partner supporting TRLC 2026.
+          </p>
+        </div>
+
+        <form id="partnerForm" class="partner-form" novalidate>
+          <!-- Full Name -->
+
+          <div class="form-group">
+            <label for="fullName">Fullname</label>
+
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+
+          <div class="form-group">
+            <label for="email">Email</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <!-- Phone -->
+
+          <div class="form-group">
+            <label for="phone"> Phone Number </label>
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+234 800 000 0000"
+              autocomplete="tel"
+              required
+            />
+          </div>
+
+          <!-- Prayer Request -->
+
+          <div class="form-group">
+            <label for="prayerRequest"> Prayer Request (Optional) </label>
+
+            <textarea
+              id="prayerRequest"
+              name="prayerRequest"
+              rows="5"
+              placeholder="Share a prayer request with us (optional)."
+            ></textarea>
+          </div>
+
+          <!-- Anonymous Giving -->
+
+          <div class="toggle-row">
+            <div>
+              <h4>Give Anonymously</h4>
+
+              <p>Your name will not appear in the Live Giving Feed.</p>
+            </div>
+
+            <label class="switch">
+              <input type="checkbox" id="anonymousGiving" />
+
+              <span class="slider"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- PAYMENT METHODS -->
+
+    <section class="payment-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag"> Choose Payment Method </span>
+
+          <h2>Complete Your Partnership</h2>
+        </div>
+
+        <div class="payment-method-grid">
+          <button class="payment-option active" data-method="online">
+            <i class="fa-solid fa-building-columns"></i>
+
+            <h3>Online Bank Transfer</h3>
+
+            <p>Transfer using your banking app.</p>
+          </button>
+
+          <button class="payment-option" data-method="ussd">
+            <i class="fa-solid fa-mobile-screen"></i>
+
+            <h3>USSD Transfer</h3>
+
+            <p>Pay using your bank USSD code.</p>
+          </button>
+
+          <button class="payment-option" data-method="zenith">
+            <i class="fa-solid fa-landmark"></i>
+
+            <h3>Zenith Bank</h3>
+
+            <p>Direct bank transfer.</p>
+          </button>
+
+          <!-- <button class="payment-option" data-method="moniepoint">
+            <i class="fa-solid fa-wallet"></i>
+
+            <h3>Moniepoint Business</h3>
+
+            <p>Business account transfer.</p>
+          </button> -->
+        </div>
+        <!-- ACCOUNT DETAILS -->
+
+        <div class="account-card" id="accountCard">
+          <div class="preferred-badge">Account Details</div>
+
+          <h3 id="bankTitle">Zenith Bank</h3>
+
+          <div class="account-info">
+            <div class="account-row">
+              <span>Account Name</span>
+
+              <strong>THE RESURRECTED GLOBAL EKKLESIA WORLDWIDE – TRLC</strong>
+            </div>
+
+            <div class="account-row">
+              <span>Account Number</span>
+
+              <strong id="accountNumber"> 1310352971 </strong>
+            </div>
+          </div>
+
+          <div class="account-actions">
+            <button class="btn btn-outline" id="copyAccount">
+              <i class="fa-regular fa-copy"></i>
+
+              Copy Account Number
+            </button>
+
+            <button class="btn btn-primary" id="transferComplete">
+              I've Completed My Transfer
+            </button>
+          </div>
+
+          <p class="payment-note">
+            Every confirmed transfer helps fund The Resurrected Life Conference
+            2026.
+          </p>
+        </div>
+        <!-- TRANSFER CONFIRMATION -->
+
+        <section class="transfer-confirmation" id="transferConfirmation">
+          <div class="section-header text-center">
+            <span class="section-tag"> Transfer Confirmation </span>
+
+            <h2>Confirm Your Transfer</h2>
+
+            <p>
+              Complete the form below after making your transfer. This helps our
+              finance team reconcile payments accurately.
+            </p>
+          </div>
+
+          <form id="confirmationForm" class="confirmation-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Full Name</label>
+
+                <input type="text" id="confirmName" required />
+              </div>
+
+              <div class="form-group">
+                <label>Email</label>
+
+                <input type="email" id="confirmEmail" required />
+              </div>
+
+              <div class="form-group">
+                <label>Phone Number</label>
+
+                <input type="tel" id="confirmPhone" required />
+              </div>
+
+              <div class="form-group">
+                <label>Amount Transferred</label>
+
+                <input type="number" id="confirmAmount" required />
+              </div>
+
+              <div class="form-group">
+                <label>Payment Method</label>
+
+                <input type="text" id="confirmMethod" readonly />
+              </div>
+
+              <div class="form-group">
+                <label>Transaction Reference (Optional)</label>
+
+                <input type="text" id="confirmReference" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Prayer Request (Optional)</label>
+
+              <textarea id="confirmPrayer" rows="4"></textarea>
+            </div>
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="confirmAnonymous" />
+
+              <label for="confirmAnonymous"> Give anonymously </label>
+            </div>
+
+            <button class="btn btn-primary btn-large" type="submit">
+              Submit Confirmation
+            </button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <!-- <script type="module" src="js/firebase.js"></script> -->
+    <script type="module" src="js/payment.js"></script>
+  </body>
+</html>

@@ -7,8 +7,9 @@ Official fundraising platform for **The Resurrected Life Conference (TRLC)**, or
 - Responsive Landing Page
 - Secure Online Giving
 - Live Campaign Progress
+- Live Campaign Feed 
 - Firebase Firestore
-- Paystack Integration
+- Online Transfer Integration
 - Netlify Serverless Functions
 - Gallery
 - Testimonials

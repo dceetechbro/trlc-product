@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TRLC Admin Dashboard</title>
+    <link rel="icon" type="image/png" href="images/TRC Official.png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <!-- LOGIN SCREEN -->
+
+    <section class="admin-login" id="loginScreen">
+      <div class="login-card">
+        <img src="images/TRC Official.png" alt="TRLC Logo" />
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label>Email</label>
+
+            <input
+              type="email"
+              id="adminEmail"
+              placeholder="admin@trlc.org"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Password</label>
+
+            <input
+              type="password"
+              id="adminPassword"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <button class="btn" type="submit">Login</button>
+        </form>
+
+        <p id="loginError"></p>
+      </div>
+    </section>
+
+    <!-- CAMPAIGN DASHBOARD -->
+
+    <section class="admin-panel" id="dashboard" style="display: none">
+      <div class="container">
+        <div class="admin-header">
+          <h3>TRLC 2026 Campaign Update</h3>
+
+          <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+        </div>
+
+        <form id="campaignForm">
+          <div class="form-group">
+            <label>Campaign Title</label>
+
+            <input type="text" id="title" required />
+          </div>
+
+          <div class="form-group">
+            <label>Description</label>
+
+            <textarea id="description" rows="4"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Amount Raised</label>
+
+            <input type="number" id="raised" required />
+          </div>
+
+          <div class="form-group">
+            <label>Project Target</label>
+
+            <input type="number" id="target" required />
+          </div>
+
+          <button class="btn" type="submit">Update Campaign</button>
+        </form>
+
+        <p id="status"></p>
+
+        <hr class="admin-divider" />
+
+        <div class="donation-admin">
+          <h4>Pending Confirmations</h4>
+
+          <p class="admin-subtitle">Verify confirmed transfers below.</p>
+
+          <div id="donationList" class="donation-list">
+            <p class="empty-state">Loading donations...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="js/admin.js"></script>
+  </body>
+</html>

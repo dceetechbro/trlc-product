@@ -1,0 +1,975 @@
+/* LARGE LAPTOPS */
+
+@media (max-width: 1200px) {
+  .container {
+    width: min(100% - 3rem, var(--container-width));
+  }
+
+  .hero-content {
+    max-width: 650px;
+  }
+}
+
+/* TABLETS */
+
+@media (max-width: 992px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-content {
+    margin: auto;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-content {
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+    max-width: 650px;
+    margin: auto;
+  }
+
+  .about-image img {
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-description {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .about-features {
+    margin-top: 2rem;
+  }
+
+  .feature-item {
+    text-align: left;
+  }
+
+  .edition-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .edition-image {
+    order: 1;
+    max-width: 650px;
+    margin: auto;
+  }
+
+  .edition-content {
+    order: 2;
+    text-align: center;
+  }
+
+  .edition-image img {
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .edition-description {
+    max-width: 700px;
+    margin: 2rem auto 3rem;
+  }
+
+  .experience-list {
+    gap: 1.5rem;
+  }
+
+  .experience-item {
+    text-align: left;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .impact-feature {
+    margin: 3rem 0;
+  }
+
+  .impact-feature img {
+    height: 480px;
+    object-fit: cover;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .video-thumbnail img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .video-content {
+    padding: 1.6rem;
+  }
+
+  .video-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .video-content p {
+    font-size: 0.95rem;
+  }
+
+  .section-subtitle {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  /* WHY WE'RE RAISING */
+
+  .raising-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .raising-card {
+    padding: 2rem;
+  }
+
+  .raising-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.8rem;
+  }
+
+  .raising-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .raising-card p {
+    line-height: 1.8;
+  }
+
+  /* PARTNER CTA */
+
+  .partner-card {
+    max-width: 700px;
+    padding: 4rem 3rem;
+  }
+
+  .partner-card .section-title {
+    max-width: 100%;
+  }
+
+  .partner-card .section-subtitle {
+    max-width: 620px;
+    margin-inline: auto;
+  }
+
+  .partner-actions {
+    justify-content: center;
+  }
+
+  .budget-grid,
+  .campaign-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* ---------- FOOTER ---------- */
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-inline: auto;
+  }
+
+  .footer-brand p {
+    max-width: 600px;
+    margin: 1rem auto 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .updates-grid,
+  .featured-update {
+    grid-template-columns: 1fr;
+  }
+
+  /* TESTIMONIALS */
+
+  .testimonial-slider {
+    max-width: 700px;
+  }
+
+  .testimonial-card {
+    padding: 2.5rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1.05rem;
+  }
+
+  .testimonial-name {
+    font-size: 1.15rem;
+  }
+
+  .testimonial-controls {
+    margin-top: 2rem;
+  }
+
+  .update-card img {
+    height: 240px;
+  }
+
+  .vision-video-card {
+    padding: 1rem;
+  }
+
+  .vision-video-card video {
+    border-radius: 14px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 90px;
+    left: -100%;
+    width: 100%;
+    background: #081426;
+    transition: 0.35s ease;
+    padding: 2rem 0;
+    z-index: 999;
+  }
+
+  .navbar.active {
+    left: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .nav-list li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-list a {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 0;
+  }
+
+  .nav-list .btn {
+    width: 85%;
+    margin: auto;
+  }
+
+  .header {
+    height: 90px;
+  }
+
+  /* HERO */
+
+  .hero {
+    min-height: 90vh;
+    padding-top: 110px;
+    padding-bottom: 70px;
+  }
+
+  .hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.3rem, 7vw, 3.2rem);
+    line-height: 1.15;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-inline: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .about-image img {
+    height: 380px;
+  }
+
+  .about-image img,
+.edition-image img{
+    height:450px;
+}
+
+.about-image,
+.edition-image{
+    border-radius:22px;
+}
+
+  .feature-item {
+    gap: 1rem;
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
+  }
+
+  .feature-item h3 {
+    font-size: 1rem;
+  }
+
+  .feature-item p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .edition-image img {
+    height: 380px;
+  }
+
+  .experience-item {
+    gap: 1rem;
+  }
+
+  .experience-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .experience-item h3 {
+    font-size: 1rem;
+  }
+
+  .experience-item p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .gallery-item img {
+    height: 180px;
+    border-radius: 18px;
+  }
+
+  .impact-feature img {
+    height: 340px;
+  }
+
+  .impact-feature {
+    border-radius: 24px;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .video-card {
+    border-radius: 20px;
+  }
+
+  .video-thumbnail img {
+    height: 240px;
+  }
+
+  .play-button {
+    font-size: 2.4rem;
+  }
+
+  .video-content {
+    padding: 1.5rem;
+  }
+
+  /* WHY WE'RE RAISING */
+
+  .raising-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .raising-card {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .raising-icon {
+    margin: 0 auto 1.5rem;
+  }
+
+  .raising-card h3 {
+    margin-bottom: 1rem;
+  }
+
+  /* PARTNER CTA */
+
+  .partner {
+    padding: 5rem 0;
+  }
+
+  .partner-card {
+    padding: 2.5rem;
+    border-radius: 24px;
+    text-align: center;
+  }
+
+  .partner-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .partner-actions .btn {
+    width: 100%;
+  }
+
+  /* ---------- TESTIMONIALS ---------- */
+
+  .testimonials {
+    padding: 5rem 0;
+  }
+
+  .testimonial-slider {
+    width: 100%;
+  }
+
+  .testimonial-card {
+    padding: 2rem;
+    border-radius: 20px;
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+
+  .testimonial-name {
+    font-size: 1.05rem;
+  }
+
+  .testimonial-controls {
+    margin-top: 1.5rem;
+  }
+
+  .testimonial-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  /* GLOBAL SECTION SPACING */
+
+  .section {
+    padding: 5rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    max-width: 650px;
+    margin-inline: auto;
+    line-height: 1.8;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    padding: 5rem 0 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-inline: auto;
+  }
+
+  .footer-links {
+    padding: 0;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .footer-bottom div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  /* ---------- GIVE PAGE ---------- */
+
+.give-hero{
+    padding:7rem 0 3rem;
+}
+
+.give-hero h1{
+    font-size:2.2rem;
+}
+
+.give-hero p{
+    font-size:1rem;
+    line-height:1.8;
+}
+
+.campaign-grid{
+    grid-template-columns:1fr;
+    gap:1rem;
+}
+
+.campaign-card{
+    padding:1.5rem;
+}
+
+.campaign-card h3{
+    font-size:1.6rem;
+}
+
+.budget-grid{
+    grid-template-columns:1fr;
+    gap:1.2rem;
+}
+
+.budget-card{
+    padding:1.6rem;
+}
+
+.amount-grid{
+    grid-template-columns:1fr;
+}
+
+.custom-amount{
+    max-width:100%;
+}
+
+.frequency-group{
+    flex-direction:column;
+}
+
+.frequency-btn{
+    width:100%;
+}
+
+.partner-form{
+    max-width:100%;
+}
+
+.toggle-row{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:1rem;
+}
+
+.payment-method-grid{
+    grid-template-columns:1fr;
+}
+
+.account-card{
+    padding:1.8rem;
+}
+
+.account-row{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:.5rem;
+}
+
+.account-actions{
+    flex-direction:column;
+}
+
+.account-actions .btn{
+    width:100%;
+}
+
+.transfer-confirmation{
+    padding:2rem;
+}
+
+.form-grid{
+    grid-template-columns:1fr;
+}
+
+.live-feed{
+    margin-top:2rem;
+}
+
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 85vh;
+    padding-top: 100px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .about-image img {
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .feature-item {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-bottom: none;
+    padding-bottom: 1rem;
+  }
+
+  .feature-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .edition-image img {
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .edition-description {
+    font-size: 0.95rem;
+  }
+
+  .experience-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+  }
+
+  .impact-feature img {
+    height: 250px;
+  }
+
+  .impact-feature {
+    margin: 2rem 0;
+    border-radius: 20px;
+  }
+
+  .video-thumbnail img {
+    height: 210px;
+  }
+
+  .video-content {
+    padding: 1.3rem;
+  }
+
+  .video-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .video-content p {
+    font-size: 0.9rem;
+  }
+
+  .video-content span {
+    font-size: 0.9rem;
+  }
+
+  /* WHY WE'RE RAISING */
+
+  .raising-card {
+    padding: 1.6rem;
+    border-radius: 20px;
+  }
+
+  .raising-icon {
+    width: 54px;
+    height: 54px;
+    font-size: 1.5rem;
+  }
+
+  .raising-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .raising-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .partner-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .partner-card .section-title {
+    font-size: 2rem;
+  }
+
+  .partner-card .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-card {
+    padding: 1.6rem;
+  }
+
+  .testimonial-quote {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-name {
+    font-size: 1rem;
+  }
+
+  .testimonial-role {
+    font-size: 0.9rem;
+  }
+
+  .testimonial-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-title {
+    margin-bottom: 0.8rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .footer {
+    padding: 4rem 0 2rem;
+  }
+
+  .footer h4 {
+    margin-bottom: 1rem;
+  }
+
+  .footer-links li {
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .social-links {
+    gap: 0.75rem;
+  }
+
+  .social-links a {
+    width: 42px;
+    height: 42px;
+  }
+
+  .footer-bottom {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom div {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-bottom span {
+    display: none;
+  }
+
+  .give-hero{
+    padding:6rem 0 2.5rem;
+}
+
+.give-hero h1{
+    font-size:1.9rem;
+}
+
+.give-hero p{
+    font-size:.95rem;
+}
+
+.campaign-card,
+.budget-card{
+    padding:1.4rem;
+}
+
+.budget-card h4{
+    font-size:1.3rem;
+}
+
+.account-card,
+.transfer-confirmation{
+    padding:1.5rem;
+}
+
+.preferred-badge{
+    font-size:.8rem;
+}
+
+.feed-item{
+    padding:14px 16px;
+    font-size:.9rem;
+}
+  
+}
+
+@media (max-width: 360px) {
+  .gallery-item img {
+    height: 210px;
+  }
+
+  .impact-feature img {
+    height: 220px;
+  }
+
+  .video-thumbnail img {
+    height: 190px;
+  }
+
+  .play-button {
+    font-size: 2rem;
+  }
+
+  /* WHY WE'RE RAISING */
+
+  .raising-card {
+    padding: 1.4rem;
+  }
+
+  .raising-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.35rem;
+  }
+
+  .partner-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-card {
+    padding: 1.4rem;
+  }
+
+  .testimonial-quote {
+    line-height: 1.8;
+  }
+
+  .footer-logo {
+    width: 80px;
+    height: auto;
+  }
+
+  .social-links a {
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer-brand p {
+    font-size: 0.9rem;
+  }
+}
