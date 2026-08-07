@@ -251,6 +251,20 @@
   .vision-video-card video {
     border-radius: 14px;
   }
+
+  .checkbox-row {
+    width: 100%;
+    max-width: 100%;
+    gap: 8px;
+    box-sizing: border-box;
+  }
+
+  .checkbox-row label {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
 }
 
 /* MOBILE */
@@ -671,7 +685,18 @@
 .live-feed{
     margin-top:2rem;
 }
+.checkbox-row {
+    width: 100%;
+    max-width: 100%;
+    gap: 8px;
+    box-sizing: border-box;
+  }
 
+  .checkbox-row label {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
 }
 
 @media (max-width: 480px) {
@@ -916,7 +941,20 @@
     font-size:.9rem;
 }
   
+  .checkbox-row {
+    width: 100%;
+    max-width: 100%;
+    gap: 8px;
+    box-sizing: border-box;
+  }
+
+  .checkbox-row label {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
 }
+
 
 @media (max-width: 360px) {
   .gallery-item img {
@@ -971,5 +1009,17 @@
 
   .footer-brand p {
     font-size: 0.9rem;
+  }
+.checkbox-row {
+    width: 100%;
+    max-width: 100%;
+    gap: 8px;
+    box-sizing: border-box;
+  }
+
+  .checkbox-row label {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 }
