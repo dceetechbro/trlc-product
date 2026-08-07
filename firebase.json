@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "trlc",
     "public": ".",
     "ignore": [
       "firebase.json",
