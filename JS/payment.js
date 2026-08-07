@@ -452,7 +452,7 @@ onSnapshot(campaignRef, (snapshot) => {
         amountRaised.textContent = raised.toLocaleString();
         projectBudget.textContent = target.toLocaleString();
         remainingBudget.textContent = (target - raised).toLocaleString();
-        campaignPercentage.textContent = percentage + "%";
+        campaignPercentage.textContent = percentage + "";
         campaignProgress.style.width = percentage + "%";
 
     }
