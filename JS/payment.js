@@ -500,7 +500,7 @@ function showPartner() {
     const donation = verifiedPartners[currentPartner];
 
     const partnerName = donation.anonymous
-        ? "Anonymous Donor"
+        ? "Anonymous Partner"
         : donation.fullName;
 
     liveFeed.innerHTML = `

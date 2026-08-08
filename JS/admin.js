@@ -199,13 +199,13 @@ onSnapshot(donationQuery, (snapshot) => {
 
         <div class="donation-actions">
 
-            <button
+            <button type="button"
                 class="verify-btn">
                 Verify
             </button>
 
-            <button
-                class="reject-btn">
+            <button type="button"
+                 class="reject-btn">
                 Reject
             </button>
 
