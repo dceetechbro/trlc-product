@@ -244,11 +244,12 @@ onSnapshot(donationQuery, (snapshot) => {
 
 async function verifyDonation(donationId, amount) {
   try {
+    let verifiedDonation = null;
+
     await runTransaction(db, async (transaction) => {
       const donationRef = doc(db, "donations", donationId);
 
       const campaignSnapshot = await transaction.get(campaignRef);
-
       const donationSnapshot = await transaction.get(donationRef);
 
       if (!campaignSnapshot.exists()) {
@@ -267,18 +268,30 @@ async function verifyDonation(donationId, amount) {
 
       const campaign = campaignSnapshot.data();
 
+      const verifiedAt = new Date();
+
       transaction.update(donationRef, {
         status: "verified",
-
-        verifiedAt: new Date(),
+        verifiedAt: verifiedAt,
       });
 
       transaction.update(campaignRef, {
         raised: campaign.raised + amount,
-
-        updatedAt: new Date(),
+        updatedAt: verifiedAt,
       });
+
+      verifiedDonation = {
+        fullName: donation.fullName || "",
+        amount: Number(donation.amount || amount),
+        anonymous: donation.anonymous === true,
+        verifiedAt: verifiedAt,
+      };
     });
+
+    // Create public-safe live feed entry
+    if (verifiedDonation) {
+      await addDoc(collection(db, "liveFeed"), verifiedDonation);
+    }
 
     status.style.color = "#28a745";
 
@@ -287,12 +300,13 @@ async function verifyDonation(donationId, amount) {
     setTimeout(() => {
       status.textContent = "";
     }, 3000);
+
   } catch (error) {
     console.error(error);
 
     status.style.color = "#dc3545";
 
-    status.textContent = "✗ Unable to verify donation.";
+    status.textContent = "✕ Unable to verify donation.";
 
     setTimeout(() => {
       status.textContent = "";

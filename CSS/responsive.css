@@ -692,10 +692,14 @@
     box-sizing: border-box;
   }
 
+  .checkbox-row input[type="checkbox"] {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+  }
+
   .checkbox-row label {
-    min-width: 0;
-    max-width: 100%;
-    overflow-wrap: break-word;
+    font-size: 24px;
   }
 }
 
@@ -948,10 +952,14 @@
     box-sizing: border-box;
   }
 
+  .checkbox-row input[type="checkbox"] {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+  }
+
   .checkbox-row label {
-    min-width: 0;
-    max-width: 100%;
-    overflow-wrap: break-word;
+    font-size: 20px;
   }
 }
 
@@ -1017,9 +1025,13 @@
     box-sizing: border-box;
   }
 
+  .checkbox-row input[type="checkbox"] {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+  }
+
   .checkbox-row label {
-    min-width: 0;
-    max-width: 100%;
-    overflow-wrap: break-word;
+    font-size: 18px;
   }
 }

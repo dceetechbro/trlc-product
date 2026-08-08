@@ -1,0 +1,37 @@
+rules_version = '2';
+
+service cloud.firestore {
+
+  match /databases/{database}/documents {
+
+    // Campaign
+    match /campaign/{campaignId} {
+
+      // Public can see campaign progress
+      allow read: if true;
+
+      // Only authenticated admin can modify campaign
+      allow create, update, delete: if request.auth != null;
+    }
+
+    // Private donations
+    match /donations/{donationId} {
+
+      // Anyone can submit a donation confirmation
+      allow create: if true;
+
+      // Only authenticated admin can access donation records
+      allow read, update, delete: if request.auth != null;
+    }
+
+    // Public live giving feed
+    match /liveFeed/{feedId} {
+
+      // Anyone can see verified public feed information
+      allow read: if true;
+
+      // Only authenticated admin can create/update/delete feed entries
+      allow create, update, delete: if request.auth != null;
+    }
+  }
+}

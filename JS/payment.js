@@ -466,14 +466,13 @@ const liveFeed = document.getElementById("liveFeed");
 let verifiedPartners = [];
 let currentPartner = 0;
 
-const donationsQuery = query(
-    collection(db, "donations"),
-    where("status", "==", "verified"),
+const liveFeedQuery = query(
+    collection(db, "liveFeed"),
     orderBy("verifiedAt", "desc"),
     limit(20)
 );
 
-onSnapshot(donationsQuery, (snapshot) => {
+onSnapshot(liveFeedQuery, (snapshot) => {
 
     verifiedPartners = [];
 
@@ -501,7 +500,7 @@ function showPartner() {
     const donation = verifiedPartners[currentPartner];
 
     const partnerName = donation.anonymous
-        ? "Anonymous Partner"
+        ? "Anonymous Donor"
         : donation.fullName;
 
     liveFeed.innerHTML = `

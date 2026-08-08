@@ -894,6 +894,11 @@
 .checkbox-row label {
   flex: 1 1 auto;
   min-width: 0;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  position: static;
+  width: auto;
   max-width: 100%;
   line-height: 1.5;
   white-space: normal;
